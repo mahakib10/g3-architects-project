@@ -46,7 +46,7 @@
   font-size: 4rem;
   font-weight: 700;
 }
-.banner p {
+.banner p , .section-para {
   font-size: 1rem;
   line-height: 26px;
   color: #727272;
@@ -71,12 +71,131 @@
   margin-bottom: 45px;
 }
 
+
+.common-width {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.features {
+  display: flex;
+  margin-top: 85px;
+  align-items: center;
+  gap: 76px;
+}
+.features-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.features-content {
+  max-width: 530px;
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#quick {
+  color: #727272;
+}
+#fea {
+  color: #FF900E;
+}
+.bot-gap {
+  margin-bottom: 130px;
+}
+
+.facts {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.facts .facts-head .section-title {
+  margin-bottom: 24px;
+}
+.facts .facts-head .section-para {
+  max-width: 540px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 100px;
+  margin-bottom: 180px;
+  justify-items: center;
+  align-items: center;
+}
+.card-info {
+  width: 240px;
+  height: 240px;
+  border: 2px solid #FF900E;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.card-dep {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #727272;
+  margin-top: 5px;
+}
+.card-info img {
+  margin-top: 45px;
+}
+
+
+.sponsors {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+.sponsors-content {
+  max-width: 540px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.sponsors-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  filter: grayscale(100%);
+}
+
 @media screen and (max-width:576px) {
-    .navbar , .nav-links {
+    .navbar , .nav-links ,.features {
         flex-direction: column;
     }
     .banner-image {
         width: 100%;
     }
-
+    .features-image {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr)
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+      justify-items: center;
+      align-items: center;
+      gap: 50px;
+    }
+    .sponsors-content {
+      text-align: left;
+    }
+    .sponsors-img {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+      justify-items: center;
+      align-items: center;
+      gap: 50px;
+    }
 }
